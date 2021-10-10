@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Come join us where we Travel the World, we’re committed to making travel accessible to all. ">
+    <title>Travel Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6d6d946c99.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="images/logo.png" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="far fa-times-circle" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="blogs.html">BLOG</a></li>
+            <li class="active"><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Contact</h1>
+    </section>
+
+    <!----------------------CONTACT----------------------->
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.4174329791174!2d10.839296016096458!3d59.925215281871324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46416fbfd5e5143b%3A0xeff81bf7ffa87ff9!2sStr%C3%B8msveien%20240D%2C%200668%20Oslo!5e0!3m2!1sno!2sno!4v1630407810235!5m2!1sno!2sno"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+      <div class="contact-col">
+        <form id="myForm" action="">
+          <div class="form-group">
+            <input type="text" name="username" placeholder="Enter your Name" />
+            <p class="nameError"></p>
+          </div>
+          <div class="form-group">
+            <input type="text" name="email" placeholder="Enter email address" />
+            <p class="emailError"></p>
+          </div>
+          <div class="form-group">
+            <input type="text" name="subject" placeholder="Enter your subject" />
+            <p class="subjectError"></p>
+          </div>
+          <div class="form-group">
+            <textarea rows="8" name="message" placeholder="Message"></textarea>
+            <p class="messageError"></p>
+          </div>
+          <button type="submit" class="hero-btn blue-btn">Submit</button>
+        </form>
+      </div>
+    </div>
+    <!-------------------FOOTER---------------------------------->
+    <section class="footer">
+      <h4>ABOUT US</h4>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing eli<br />
+        Dignissimos, laboriosam quaerat! Accusamus labore necessitatibus velit,
+        distinctio laudantium maxime vero eum ab iste veniam recusandae! Ducimus
+        quas nulla ratione repellat omnis.
+      </p>
+      <div class="icons">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+      </div>
+      <p>Made for Travelers</p>
+    </section>
+    <!---------------------SCRIPT-------------------------->
+    <script src="js/contact.js"></script>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
